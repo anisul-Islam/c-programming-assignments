@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<ctype.h>
 int main()
 {
 
@@ -120,7 +121,7 @@ scanf("%o", &o2);
 printf("The Entered Octal Number in Hexa-Decimal is: %x\n\n\n", o2);
 
 
-//IO-14
+//IO-9
 int x2;
 
 printf("Enter A Hexa-Decimal Number and Press Enter: ");
