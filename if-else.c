@@ -1,47 +1,84 @@
-// 1.	Write a program that read mark and display pass or fail.
-// Add the solution here
+#include<stdio.h>
+int main() {
+    printf("1.Write a program that read mark and display pass or fail.\n");
+    int digit;
 
-// 2.	Write a program that read mark and display result in grade.
-// Add the solution here
+    printf("Enter a digit (0-9): ");
+    scanf("%d", &digit);
 
-// 3.	Write a program to check a number even or odd.
-// Add the solution here
+    switch(digit) {
+        case 0:
+            printf("Zero\n");
+            break;
+        case 1:
+            printf("One\n");
+            break;
+        case 2:
+            printf("Two\n");
+            break;
+        case 3:
+            printf("Three\n");
+            break;
+        case 4:
+            printf("Four\n");
+            break;
+        case 5:
+            printf("Five\n");
+            break;
+        case 6:
+            printf("Six\n");
+            break;
+        case 7:
+            printf("Seven\n");
+            break;
+        case 8:
+            printf("Eight\n");
+            break;
+        case 9:
+            printf("Nine\n");
+            break;
+        default:
+            printf("Invalid digit\n");
+    }
+    printf("2.Write a program that read mark and display result in grade.\n");
+    int mark;
+    printf("Enter the mark: ");
+    scanf("%d", &mark);
 
-// 4.	Write a program that read mark and display pass or fail.
-// Add the solution here
+   switch(mark/10) {
+        case 10:
+        case 9:
+            printf("Grade: A+\n");
+            break;
+        case 8:
+            printf("Grade: A\n");
+            break;
+        case 7:
+            printf("Grade: A\n");
+            break;
+        case 6:
+            printf("Grade: B+\n");
+            break;
+        case 5:
+            printf("Grade: C+\n");
+            break;
+        default:
+            printf("Grade: F\n");
+            break;
+    }
+    printf("3.Write a program to check a number even or odd.\n");
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
-// 5.	Write a program that read mark and display result in grade.
-// Add the solution here
+    switch(num % 2) {
+        case 0:
+            printf("%d is even.", num);
+            break;
+        case 1:
+            printf("%d is odd.", num);
+            break;
+    }
 
-// 6.	Write a program to check a number even or odd.
-// Add the solution here
-
-// 7.	Write a program to check a number positive or negative.
-// Add the solution here
-
-// 8.	Write a program that read two numbers and display maximum.
-// Add the solution here
-
-// 9.	Write a program that read two numbers and display minimum.
-// Add the solution here
-
-// 10.Write a program that read three numbers and display maximum.
-// Add the solution here
-
-// 11.Write a program that read three numbers and display minimum.
-// Add the solution here
-
-// 12.Write a program that read three numbers and display medium.
-// Add the solution here
-
-// 13. Write a program that read three numbers (a, b, c) and determine the roots of the quadratic equation.
-// Add the solution here
-
-// 14. Write a program that read any year and display leap or not.
-// Add the solution here
-
-// 15. Write a program that read any letter and display vowel or consonant.
-// Add the solution here
-
-// 16. Write a program that read any letter and display its uppercase or lowercase.
-// Add the solution here
+    return 0;
+}
